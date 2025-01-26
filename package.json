@@ -1,0 +1,33 @@
+{
+  "name": "20250120_chatgpt_faqbot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "dev": "tsc-watch --onSuccess \"nodemon ./dist/index.js\"",
+    "start": "tsc && node dist/index.js",
+    "start-build": "npm run build && node dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "compute-cosine-similarity": "^1.1.0",
+    "cosine-similarity": "^1.0.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "fs": "^0.0.1-security",
+    "openai": "^4.79.4"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.7",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "tsc-watch": "^6.2.1",
+    "typescript": "^5.7.3"
+  }
+}
