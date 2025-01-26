@@ -4,4 +4,7 @@ Using embedding rather than Fine-tuning is because the FAQs need to be update. I
 Please use your own API key to use it.    
 
 ### Run
-npm run start
+1. npm i
+2. Replace your API Key in /src/api/openaiConfig.ts
+3. npm run start
+4. access 127.0.0.1:3000
